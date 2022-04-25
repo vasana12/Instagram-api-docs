@@ -2,3 +2,7 @@ sphinx
 livereload
 myst-parser
 sphinx-autodoc-typehints
+mongoengine
+python-dotenv
+dnspython
+pymongo

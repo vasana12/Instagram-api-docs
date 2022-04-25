@@ -36,21 +36,144 @@
 <h1>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
 <p>This page gives an overview of all public instagram-api objects, functions and methods.<br />
 All classes and functions exposed in instagram-api.* namespace are public.</p>
+<section id="login">
+<h2>login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="my_demo.MyDemo">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_demo.</span></span><span class="sig-name descname"><span class="pre">MyDemo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#my_demo.MyDemo" title="Permalink to this definition">¶</a></dt>
-<dd><p>A <em>great</em> demo</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="my_demo.MyDemo.hello">
-<span class="sig-name descname"><span class="pre">hello</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">greeting</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#my_demo.MyDemo.hello" title="Permalink to this definition">¶</a></dt>
-<dd><p>The canonical hello world example.</p>
-<p>A <em>longer</em> description with some <strong>RST</strong>.</p>
+<dt class="sig sig-object py" id="login.AccountBuilder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">login.</span></span><span class="sig-name descname"><span class="pre">AccountBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>this class makes account available for all circumstances.</p>
+<p>If the class has public attributes, they may be documented here
+in an <code class="docutils literal notranslate"><span class="pre">Attributes</span></code> section and follow the same formatting as a
+function’s <code class="docutils literal notranslate"><span class="pre">Args</span></code> section. Alternatively, attributes may be documented
+inline with the attribute’s declaration (see __init__ method below).</p>
+<p>Properties created with the <code class="docutils literal notranslate"><span class="pre">&#64;property</span></code> decorator should be documented
+in the property’s getter method.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="login.AccountBuilder.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#login.AccountBuilder.username" title="Permalink to this definition">¶</a></dt>
+<dd><p>username to make available</p>
 <dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="login.AccountBuilder.session">
+<span class="sig-name descname"><span class="pre">session</span></span><a class="headerlink" href="#login.AccountBuilder.session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Description of <cite>session</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>requests.sesssions.Session</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="login.AccountBuilder.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#login.AccountBuilder.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Description of <cite>logger</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="login.AccountBuilder.last_response">
+<span class="sig-name descname"><span class="pre">last_response</span></span><a class="headerlink" href="#login.AccountBuilder.last_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Description of <cite>last_response</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="login.AccountBuilder.last_json">
+<span class="sig-name descname"><span class="pre">last_json</span></span><a class="headerlink" href="#login.AccountBuilder.last_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Description of <cite>last_json</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="login.AccountBuilder.config">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">config.ConfigManager</span></em><a class="headerlink" href="#login.AccountBuilder.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>set and get config</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>self._config</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>config.ConfigManager</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>this example shows how to get and set config</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### setter</span>
+<span class="go">from config import ConfigManager</span>
+<span class="go">config = ConfigManager()</span>
+<span class="go">self.config = config</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### getter</span>
+<span class="go">self.config</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>config.ConfigManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="login.AccountBuilder.device">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">device.DeviceManager</span></em><a class="headerlink" href="#login.AccountBuilder.device" title="Permalink to this definition">¶</a></dt>
+<dd><p>set and get device</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>self._device</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>device.DeviceManager</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>this example shows how to get and set device</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### setter</span>
+<span class="go">from device import DeviceManager</span>
+<span class="go">device = DeviceManager()</span>
+<span class="go">self.device = device</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### getter</span>
+<span class="go">self.device</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>device.DeviceManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.generate_UUID">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_UUID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uuid_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.generate_UUID" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>name</strong> – The person to say hello to.</p>
+<dd class="field-odd"><p><strong>uuid_type</strong> (<em>bool</em>) – True or False</p>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The greeting</p>
+<dd class="field-even"><p>uuid</p>
 </dd>
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>str</p>
@@ -58,8 +181,225 @@ All classes and functions exposed in instagram-api.* namespace are public.</p>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.generate_all_uuids">
+<span class="sig-name descname"><span class="pre">generate_all_uuids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.generate_all_uuids" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Returns</dt><dd><p>dict: uuids</p>
+</dd>
+</dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.generate_device_id">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_device_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.generate_device_id" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seed</strong> – hashlib for device id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>“android-” + hashlib.hexdigest()[:16]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.generate_signature">
+<span class="sig-name descname"><span class="pre">generate_signature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.generate_signature" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – request Method Post data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>signed_body={signed_body}.{data}&amp;ig_sig_key_version={ig_sig_key_version}</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.get_default_header">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_default_header</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.get_default_header" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>headers.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+<dl>
+<dt>Examples</dt><dd><p>this shows default header</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">import random</span>
+<span class="go">{&quot;X-IG-App-Locale&quot;: &quot;en_US&quot;,</span>
+<span class="go">&quot;X-IG-Device-Locale&quot;: &quot;en_US&quot;,</span>
+<span class="go">&quot;X-Pigeon-Session-Id&quot;: &quot;21aa671b-a5f3-4093-8ec2-0c98420675e1&quot;,</span>
+<span class="go">&quot;X-Pigeon-Rawclienttime&quot;: str(round(time.time() * 1000)),</span>
+<span class="go">&quot;X-IG-Connection-Speed&quot;: &quot;-1kbps&quot;,</span>
+<span class="go">&quot;X-IG-Bandwidth-Speed-KBPS&quot;: str(random.randint(7000, 10000)),</span>
+<span class="go">&quot;X-IG-Bandwidth-TotalBytes-B&quot;: str(random.randint(500000, 900000)),</span>
+<span class="go">&quot;X-IG-Bandwidth-TotalTime-MS&quot;: str(random.randint(50, 150)),</span>
+<span class="go">&quot;X-IG-Prefetch-Request&quot;: &quot;foreground&quot;,</span>
+<span class="go">&quot;X-Bloks-Version-Id&quot;: &quot;0a3ae4c88248863609c67e278f34af44673cff300bc76add965a9fb036bd3ca3&quot;,</span>
+<span class="go">&quot;X-IG-WWW-Claim&quot;: &quot;0&quot;,</span>
+<span class="go">&quot;X-MID&quot;: &quot;XkAyKQABAAHizpYQvHzNeBo4E9nm&quot;,</span>
+<span class="go">&quot;X-Bloks-Is-Layout-RTL&quot;: &quot;false&quot;,</span>
+<span class="go">&quot;X-Bloks-Enable-RenderCore&quot;: &quot;false&quot;,</span>
+<span class="go"># TODO get the uuid from api_login here</span>
+<span class="go"># &quot;X-IG-Device-ID&quot;: &quot;{uuid}&quot;,</span>
+<span class="go"># TODO get the device_id from api_login here</span>
+<span class="go"># &quot;X-IG-Android-ID&quot;: &quot;{device_id}&quot;,</span>
+<span class="go">&quot;X-IG-Connection-Type&quot;: &quot;WIFI&quot;,</span>
+<span class="go">&quot;X-IG-Capabilities&quot;: &quot;3brTvwE=&quot;,</span>
+<span class="go">&quot;X-IG-App-ID&quot;: &quot;567067343352427&quot;,</span>
+<span class="go">&quot;X-IG-App-Startup-Country&quot;: &quot;US&quot;,</span>
+<span class="go">&quot;Accept-Language&quot;: &quot;en-US&quot;,</span>
+<span class="go">&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded; charset=UTF-8&quot;,</span>
+<span class="go">&quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,</span>
+<span class="go">&quot;Host&quot;: &quot;i.instagram.com&quot;,</span>
+<span class="go">&quot;X-FB-HTTP-Engine&quot;: &quot;Liger&quot;,</span>
+<span class="go">&quot;Connection&quot;: &quot;close&quot;}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.get_seed">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.get_seed" title="Permalink to this definition">¶</a></dt>
+<dd><p>containing only hexadecimal digits. This may be used to exchange the value safely in email or other non-binary environments..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>*args</strong> – Variable length argument list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>hashlib.hexdigest()</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.login">
+<span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.login" title="Permalink to this definition">¶</a></dt>
+<dd><p>login trial using fake device information. This may be used to get real instagram account session and cookie data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>send_request</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>def</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>this example shows how to use function: login</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">from login import AccountBuilder</span>
+<span class="go">account_builder = AccountBuilder()</span>
+<span class="go">account_builder.login()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="login.AccountBuilder.proxy">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">proxy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">proxy.ProxyManager</span></em><a class="headerlink" href="#login.AccountBuilder.proxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>self._proxy</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>proxy.ProxyManager</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>this example shows how to get and set proxy</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### setter</span>
+<span class="go">from proxy import ProxyManager</span>
+<span class="go">proxy = ProxyManager()</span>
+<span class="go">self.proxy = proxy</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### getter</span>
+<span class="go">self.proxy()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="login.AccountBuilder.raw_account">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">raw_account</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">raw_account.RawAccountManager</span></em><a class="headerlink" href="#login.AccountBuilder.raw_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>set and get raw_account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>self._raw_account</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>raw_account.RawAaccountManager</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>this example shows how to get and set raw_account</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### setter</span>
+<span class="go">from raw_account import RawAccountManager</span>
+<span class="go">raw_account = RawAccountManager()</span>
+<span class="go">self.raw_account = raw_account</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">### getter</span>
+<span class="go">self.raw_account</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>raw_account.RawAccountManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="login.AccountBuilder.send_request">
+<span class="sig-name descname"><span class="pre">send_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_signature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_sig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#login.AccountBuilder.send_request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request trial . This may be used to get real instagram account session and cookie data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – Description of <cite>url</cite>.</p></li>
+<li><p><strong>post</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional) – required data when you call POST method.</p></li>
+<li><p><strong>with_signature</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code>, optional) – if with_signature, send_request excute generate_signature.</p></li>
+<li><p><strong>extra_sig</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code>, optional) – if extra_sig, send_request add this to post with “&amp;”.</p></li>
+<li><p><strong>timeout</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – set request timeout</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>send_request</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>def</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>this example shows how to use function: login</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">from login import AccountBuilder</span>
+<span class="go">account_builder = AccountBuilder()</span>
+<span class="go">account_builder.login()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 </section>
 
 
@@ -82,7 +422,10 @@ All classes and functions exposed in instagram-api.* namespace are public.</p>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about_us.html">About us</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#login">login</a></li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
