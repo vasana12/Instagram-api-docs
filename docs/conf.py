@@ -36,7 +36,6 @@ author = 'jae young kim<wodud6349@gmail.com>'
 extensions = ["myst_parser",
               "sphinx.ext.autodoc",
               "sphinx.ext.napoleon",
-              "sphinx_autodoc_typehints",
               "sphinx_rtd_theme"
 ]
 
