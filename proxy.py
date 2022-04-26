@@ -1,16 +1,16 @@
 from model import Proxy
 
 class ProxyManager:
+    """this class makes proxy available for all circumstances.
+
+    If the class has public attributes, they may be documented here
+    in an ``Attributes`` section and follow the same formatting as a
+    function's ``Args`` section. Alternatively, attributes may be documented
+    inline with the attribute's declaration (see __init__ method below).
+
+    """
+
     def __init__(self):
-        """this class makes proxy available for all circumstances.
-
-            If the class has public attributes, they may be documented here
-            in an ``Attributes`` section and follow the same formatting as a
-            function's ``Args`` section. Alternatively, attributes may be documented
-            inline with the attribute's declaration (see __init__ method below).
-
-            """
-
         self._reset()
 
     def _reset(self):

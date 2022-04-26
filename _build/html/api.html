@@ -40,8 +40,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about_us.html">About us</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#test">test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#login">login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proxy">proxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#device">device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#raw-account">raw_account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-connection">connection</a></li>
 </ul>
 </li>
 </ul>
@@ -74,28 +78,71 @@
 <h1>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline"></a></h1>
 <p>This page gives an overview of all public instagram-api objects, functions and methods.<br />
 All classes and functions exposed in instagram-api.* namespace are public.</p>
-<section id="test">
-<h2>test<a class="headerlink" href="#test" title="Permalink to this headline"></a></h2>
+<section id="example">
+<h2>example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="my_demo.MyDemo">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_demo.</span></span><span class="sig-name descname"><span class="pre">MyDemo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#my_demo.MyDemo" title="Permalink to this definition"></a></dt>
-<dd><p>A <em>great</em> demo</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="my_demo.MyDemo.hello">
-<span class="sig-name descname"><span class="pre">hello</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">greeting</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#my_demo.MyDemo.hello" title="Permalink to this definition"></a></dt>
-<dd><p>The canonical hello world example.</p>
-<p>A <em>longer</em> description with some <strong>RST</strong>.</p>
+<dt class="sig sig-object py" id="example.GoogleStyleDocstring">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">example.</span></span><span class="sig-name descname"><span class="pre">GoogleStyleDocstring</span></span><a class="headerlink" href="#example.GoogleStyleDocstring" title="Permalink to this definition"></a></dt>
+<dd><p>클래스 설명 제목
+클래스에 대한 설명문</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">속성의</span> <span class="pre">이름</span></span></dt>
+<dd><p>속성의 설명</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>name</strong> – The person to say hello to.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The greeting</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>str</p>
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">속성의</span> <span class="pre">데이터형</span></code></p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">속성의</span> <span class="pre">이름</span></span></dt>
+<dd><p>속성의 설명</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">속성의</span> <span class="pre">데이터형</span></code>, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="example.GoogleStyleDocstring.example_function">
+<span class="sig-name descname"><span class="pre">example_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#example.GoogleStyleDocstring.example_function" title="Permalink to this definition"></a></dt>
+<dd><p>함수 설명 제목
+함수에 대한 설명문</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>인수의이름</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – 인수에 대한 설</p></li>
+<li><p><strong>인수의이름</strong> – Description of <cite>param2</cite>. Multiple
+lines are supported.</p></li>
+<li><p><strong>인수의이름</strong> – Description of <cite>param3</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>리턴 값의 설명(예 : True 라면 성공, False이라면 실패.)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>리턴 값의 데이터형</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>예외명</strong> – 예외의 설명 (예 : 인수가 지정되지 않은 경우에 발생 )</p>
+</dd>
+<dt class="field-odd">Yields</dt>
+<dd class="field-odd"><p><em>리턴값의 데이터형</em> – 리턴값에 대한 설명</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>함수의 사용법 기재</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_function</span> <span class="p">(</span><span class="s2">&quot;parama1&quot;</span><span class="p">,</span> <span class="s2">&quot;param2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>주의항목 등을 기재</p>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -201,14 +248,14 @@ in the property’s getter method.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="login.AccountBuilder.device">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">device.DeviceManager</span></em><a class="headerlink" href="#login.AccountBuilder.device" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#device.DeviceManager" title="device.DeviceManager"><span class="pre">device.DeviceManager</span></a></em><a class="headerlink" href="#login.AccountBuilder.device" title="Permalink to this definition"></a></dt>
 <dd><p>set and get device</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>self._device</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>device.DeviceManager</p>
+<dd class="field-even"><p><a class="reference internal" href="#device.DeviceManager" title="device.DeviceManager">device.DeviceManager</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -225,7 +272,7 @@ in the property’s getter method.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>device.DeviceManager</p>
+<dd class="field-odd"><p><a class="reference internal" href="#device.DeviceManager" title="device.DeviceManager">device.DeviceManager</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -377,13 +424,13 @@ in the property’s getter method.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="login.AccountBuilder.proxy">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">proxy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">proxy.ProxyManager</span></em><a class="headerlink" href="#login.AccountBuilder.proxy" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">proxy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#proxy.ProxyManager" title="proxy.ProxyManager"><span class="pre">proxy.ProxyManager</span></a></em><a class="headerlink" href="#login.AccountBuilder.proxy" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>self._proxy</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>proxy.ProxyManager</p>
+<dd class="field-even"><p><a class="reference internal" href="#proxy.ProxyManager" title="proxy.ProxyManager">proxy.ProxyManager</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -402,7 +449,7 @@ in the property’s getter method.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="login.AccountBuilder.raw_account">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">raw_account</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">raw_account.RawAccountManager</span></em><a class="headerlink" href="#login.AccountBuilder.raw_account" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">raw_account</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#raw_account.RawAccountManager" title="raw_account.RawAccountManager"><span class="pre">raw_account.RawAccountManager</span></a></em><a class="headerlink" href="#login.AccountBuilder.raw_account" title="Permalink to this definition"></a></dt>
 <dd><p>set and get raw_account</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -426,7 +473,7 @@ in the property’s getter method.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>raw_account.RawAccountManager</p>
+<dd class="field-odd"><p><a class="reference internal" href="#raw_account.RawAccountManager" title="raw_account.RawAccountManager">raw_account.RawAccountManager</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -462,6 +509,123 @@ in the property’s getter method.</p>
 </div>
 </dd></dl>
 
+</dd></dl>
+
+</section>
+<section id="proxy">
+<h2>proxy<a class="headerlink" href="#proxy" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="proxy.ProxyManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">proxy.</span></span><span class="sig-name descname"><span class="pre">ProxyManager</span></span><a class="headerlink" href="#proxy.ProxyManager" title="Permalink to this definition"></a></dt>
+<dd><p>this class makes proxy available for all circumstances.</p>
+<p>If the class has public attributes, they may be documented here
+in an <code class="docutils literal notranslate"><span class="pre">Attributes</span></code> section and follow the same formatting as a
+function’s <code class="docutils literal notranslate"><span class="pre">Args</span></code> section. Alternatively, attributes may be documented
+inline with the attribute’s declaration (see __init__ method below).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="proxy.ProxyManager.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.ProxyManager.load" title="Permalink to this definition"></a></dt>
+<dd><p>load model.Proxy using query.
+get available proxy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>query</strong> (<em>dict</em>) – Description of <cite>query</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="proxy.ProxyManager.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.ProxyManager.update" title="Permalink to this definition"></a></dt>
+<dd><p>update proxy status.
+get available proxy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Arbitrary keyword arguments.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="device">
+<h2>device<a class="headerlink" href="#device" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="device.DeviceManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">device.</span></span><span class="sig-name descname"><span class="pre">DeviceManager</span></span><a class="headerlink" href="#device.DeviceManager" title="Permalink to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="device.DeviceManager.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#device.DeviceManager.load" title="Permalink to this definition"></a></dt>
+<dd><p>load model.Device using query.
+load device information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>query</strong> (<em>dict</em>) – Description of <cite>query</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="device.DeviceManager.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#device.DeviceManager.to_dict" title="Permalink to this definition"></a></dt>
+<dd><p>make model.Device Object to dictionary .</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="raw-account">
+<h2>raw_account<a class="headerlink" href="#raw-account" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="raw_account.RawAccountManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">raw_account.</span></span><span class="sig-name descname"><span class="pre">RawAccountManager</span></span><a class="headerlink" href="#raw_account.RawAccountManager" title="Permalink to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="raw_account.RawAccountManager.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#raw_account.RawAccountManager.load" title="Permalink to this definition"></a></dt>
+<dd><p>load model.RawAccount using query.
+Get raw_account account for device setting</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Args:</dt><dd><p>query (dict): status : setting_before.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="raw_account.RawAccountManager.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#raw_account.RawAccountManager.update" title="Permalink to this definition"></a></dt>
+<dd><p>update raw_account status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Arbitrary keyword arguments.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-connection">
+<span id="connection"></span><h2>connection<a class="headerlink" href="#module-connection" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="connection.default_headers">
+<span class="sig-prename descclassname"><span class="pre">connection.</span></span><span class="sig-name descname"><span class="pre">default_headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">empty_session_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#connection.default_headers" title="Permalink to this definition"></a></dt>
+<dd><p>Returns default HTTP header we use for requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>empty_session_only</strong> (<em>bool</em>) – if true, we remove Host, Origin, X-Instagram-AJAX, X-Requested-With</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
