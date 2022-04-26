@@ -11,11 +11,13 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
+    "sphinx_rtd_theme"
 ]
+
 myst_enable_extensions = [
     "colon_fence",
 ]
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
 html_static_path = ['_static']
 templates_path = ['_templates']
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
